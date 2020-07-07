@@ -12,6 +12,11 @@ void main() {
 // default class MyApp
 class MyApp extends StatelessWidget {
   // creating a stateless widget and building w constructor
+
+  void answerQuestion() {
+    print('Answered question.');
+  }
+
   @override
   Widget build(BuildContext context) {
     // build widget returns a material app consisting of other widgets:
@@ -31,19 +36,19 @@ class MyApp extends StatelessWidget {
             Text('The question'),
             RaisedButton(
               child: Text('Hello 1'),
-              onPressed: null,
+              onPressed: answerQuestion,
             ),
             RaisedButton(
               child: Text('Hello 2'),
-              onPressed: null,
+              onPressed: answerQuestion,
             ),
             RaisedButton(
               child: Text('Hello 3'),
-              onPressed: null,
+              onPressed: answerQuestion,
             ),
             RaisedButton(
               child: Text('Hello 4'),
-              onPressed: null,
+              onPressed: answerQuestion,
             ),
           ],
         ),
