@@ -14,11 +14,11 @@ void main() {
 class MyApp extends StatefulWidget {
   State<StatefulWidget> createState() {
     // implement create state
-    return MyAppState();
+    return _MyAppState();
   }
 }
 
-class MyAppState extends State<MyApp> {
+class _MyAppState extends State<MyApp> {
   var questionIndex = 0;
 
   void answerQuestion() {
